@@ -18,7 +18,7 @@ impl<C: ProjectiveCurve> Reveal<C::ScalarField, ElGamal<C>> for RevealToken<C> {
         Ok(decrypted)
     }
 }
-
+// start here
 #[cfg(test)]
 mod test {
     use crate::discrete_log_cards;
