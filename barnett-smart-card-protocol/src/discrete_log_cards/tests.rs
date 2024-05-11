@@ -26,7 +26,7 @@ mod test {
     type MaskedCard = discrete_log_cards::MaskedCard<Curve>;
     type RevealToken = discrete_log_cards::RevealToken<Curve>;
 
-    /// Setup `n` players. We use a Scalar to represent player public information
+    // Setup `n` players. We use a Scalar to represent player public information
     fn setup_players<R: Rng>(
         rng: &mut R,
         parameters: &CardParameters,
@@ -44,7 +44,7 @@ mod test {
 
         (players, expected_shared_key)
     }
-
+    // test
     #[test]
     fn generate_and_verify_key() {
         let rng = &mut thread_rng();
