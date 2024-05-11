@@ -83,6 +83,7 @@ const REMASKING_RNG_SEED: &'static [u8] = b"Remasking Proof";
 const REVEAL_RNG_SEED: &'static [u8] = b"Reveal Proof";
 const SHUFFLE_RNG_SEED: &'static [u8] = b"Shuffle Proof";
 
+// Barnet Smart Protocol declaration
 impl<'a, C: ProjectiveCurve> BarnettSmartProtocol for DLCards<'a, C> {
     type Scalar = C::ScalarField;
     type Enc = ElGamal<C>;
