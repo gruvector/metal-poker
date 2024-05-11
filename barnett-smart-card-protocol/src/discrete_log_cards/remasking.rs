@@ -41,9 +41,9 @@ mod test {
     type CardParameters = discrete_log_cards::Parameters<Curve>;
     type PublicKey = discrete_log_cards::PublicKey<Curve>;
     type SecretKey = discrete_log_cards::PlayerSecretKey<Curve>;
-
+    // MaksedCard
     type MaskedCard = discrete_log_cards::MaskedCard<Curve>;
-
+    // Remasking Proof
     type RemaskingProof = chaum_pedersen_dl_equality::proof::Proof<Curve>;
 
     fn setup_players<R: Rng>(
