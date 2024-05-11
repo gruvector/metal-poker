@@ -164,6 +164,7 @@ impl<'a, C: ProjectiveCurve> BarnettSmartProtocol for DLCards<'a, C> {
         )
     }
 
+    // Compute aggregate key and declaration
     fn compute_aggregate_key<B: ToBytes>(
         pp: &Self::Parameters,
         player_keys_proof_info: &Vec<(Self::PlayerPublicKey, Self::ZKProofKeyOwnership, B)>,
